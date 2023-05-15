@@ -1,0 +1,46 @@
+// Regina Widya Ardiningrum - 6701213068 - D3SI 45-02 //
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poetry Menggunakan API</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.ajax({
+				url: "https://poetrydb.org/title/Ozymandias/lines.json",
+				dataType: "jsonp",
+				jsonpCallback: "myParser",
+				success: function(data) 
+			});
+			
+			function myParser(data) {
+			}
+		});
+	</script>
+</head>
+<body>
+	<h1>Poetry</h1>
+	
+		<thead>
+			<tr>
+               
+                      "I met a traveller from an antique land",
+                      "Who said: Two vast and trunkless legs of stone",
+                      "Stand in the desert...Near them, on the sand,",
+                      "Half sunk, a shattered visage lies, whose frown,",
+                      "And wrinkled lip, and sneer of cold command,",
+                      "Tell that its sculptor well those passions read",
+                      "Which yet survive, stamped on these lifeless things,",
+                      "The hand that mocked them, and the heart that fed:",
+                      "And on the pedestal these words appear:",
+                      "'My name is Ozymandias, king of kings:",
+                      "Look on my works, ye Mighty, and despair!'",
+                      "Nothing beside remains. Round the decay",
+                      "Of that colossal wreck, boundless and bare",
+                      "The lone and level sands stretch far away."
+                   
+			</tr>	
+		</thead>
+	
+</body>
+</html>
